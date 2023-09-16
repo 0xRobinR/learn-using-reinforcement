@@ -50,7 +50,7 @@ def choose_move(state, board, model):
     return best_move_uci, legal_moves
 
 
-for games in range(10):
+for games in range(1000):
     board.reset()
     while not board.is_game_over():
         state = board_to_tensor(board)
